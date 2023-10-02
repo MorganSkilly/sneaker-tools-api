@@ -1,0 +1,95 @@
+body
+{
+    background-color: #0f0f0f;
+}
+
+h5
+{
+    color: #ffffff;
+}
+
+h4
+{
+    color: #ffffff;
+    text-align: center;
+}
+
+a
+{
+    color: #ffffff;
+}
+
+.name
+{
+    color: #ffffff;
+}
+
+p
+{
+    color: #ffffff;
+}
+
+div
+{
+    color: #ffffff;
+}
+
+#email
+{
+    text-decoration: none;
+    float: right;
+    color:#ffffff;
+}
+
+.footer
+{
+    margin-top: 5% !important;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 479px)
+{
+    .footer
+    {
+        margin-top: 35% !important;
+    }
+}
+
+@media screen and (orientation: portrait)
+{
+    #portrait
+    {
+        display: none;
+    }      
+}
+
+.bg {
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, rgb(255, 0, 106) 0%, rgb(0, 195, 255) 25%, rgb(0, 60, 255) 51%, #ff357f 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+            animation: AnimateBG 20s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
