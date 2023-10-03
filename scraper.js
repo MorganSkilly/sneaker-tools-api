@@ -29,7 +29,7 @@ function getShopifyList(shopifyUrl)
   const imagesQuery = xmlDoc.querySelectorAll("hash > images > image");
 
   const embed = {
-    title: domain + " scraper",
+    title: domain,
     color: 3447003,
     fields: [],
     image: {
