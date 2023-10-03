@@ -1,6 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
 
-getShopifyList(urlParams.get('shopify'));
+if (urlParams.has("shopify"))
+{
+  getShopifyList(urlParams.get("shopify"));
+}
 
 function httpGet(theUrl)
 {
@@ -58,7 +61,10 @@ function getShopifyList(shopifyUrl)
     embeds: [embed]
   };
 
-  sendWebhook(urlParams.get('webhook'), data, embed);
+  if (urlParams.has("webhook"))
+  {
+    sendWebhook(urlParams.get("webhook"), data, embed);
+  }
 }
 
 function sendWebhook(webhookUrl, data)

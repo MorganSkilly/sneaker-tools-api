@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Discord Webhook</title>
+    <title>Shopify Tool</title>
 </head>
 <body>
-    <pre id="output"></pre>
+    <form method="get"><br><br>
+        <label for="shopify">Shopify product url:</label>
+        <input type="text" id="shopify" name="shopify"><br><br>
+        <label for="webhook">Discord webhook url:</label>
+        <input type="text" id="webhook" name="webhook">
+        <input type="submit" value="Submit">
+    </form><br><br>
+
+    <div id="output"></div>
     <script src="scraper.js"></script>
 </body>
 </html>
