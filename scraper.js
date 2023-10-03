@@ -50,7 +50,7 @@ function getShopifyList(shopifyUrl)
     var link = "https://" + domain.hostname.replace('www.', '') + "/cart/" + element.querySelector("id").textContent + ":1";
     document.getElementById("output").innerHTML += "<a href=" + link + ">" + link + "</a>";
     document.getElementById("output").innerHTML += "<br>";
-    document.getElementById("output").innerHTML += "<br>";
+    document.getElementById("output").innerHTML += "<br><br><br>";
     
     embed.fields.push({
         name: element.querySelector("option1").textContent + " | " + element.querySelector("option2").textContent + " | " + element.querySelector("id").textContent,
