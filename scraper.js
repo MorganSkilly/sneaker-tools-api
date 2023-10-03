@@ -42,6 +42,8 @@ function getShopifyList(shopifyUrl)
   {
     document.getElementById("output").innerHTML += element.querySelector("option1").textContent;
     document.getElementById("output").innerHTML += "<br>";
+    document.getElementById("output").innerHTML += element.querySelector("option2").textContent;
+    document.getElementById("output").innerHTML += "<br>";
     document.getElementById("output").innerHTML += element.querySelector("id").textContent;
     document.getElementById("output").innerHTML += "<br>";
 
@@ -51,7 +53,7 @@ function getShopifyList(shopifyUrl)
     document.getElementById("output").innerHTML += "<br>";
     
     embed.fields.push({
-        name: element.querySelector("option1").textContent + " | " + element.querySelector("id").textContent,
+        name: element.querySelector("option1").textContent + " | " + element.querySelector("option2").textContent + " | " + element.querySelector("id").textContent,
         value: link,
     });
   }
